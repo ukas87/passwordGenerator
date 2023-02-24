@@ -9,7 +9,7 @@ export class AppComponent {
   password = '';
 
   onButtonClick(){
-    console.log('Button was clicked!')
+    this.password = 'My password';
   }
 }
 
