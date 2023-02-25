@@ -8,15 +8,15 @@
 <div>
   <div>
     <label> Use Letters</label>
-    <input type="checkbox">
+    <input (change)="onChangeUseLetters()" type="checkbox">
   </div>
   <div>
     <label> Use Numbers</label>
-    <input type="checkbox">
+    <input (change)="onChangeUseNumbers()" type="checkbox">
   </div>
   <div>
     <label> Use Symbols</label>
-    <input type="checkbox">
+    <input (change)="onChangeUseSymbols()" type="checkbox">
   </div>
 </div>
 <br>
@@ -27,3 +27,5 @@
   <label>Your password</label>
   <input [value]="password"/>
 </div>
+
+{{ password }}
